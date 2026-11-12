@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrito | Maison Aube</title>
+  <meta name="description" content="Revisa los productos de tu carrito en Maison Aube antes de comprar.">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-white text-neutral-900">
+
+  <!-- Barra de anuncio -->
+  <div class="flex items-center justify-center gap-2 bg-neutral-100 px-4 py-2 text-sm font-medium">
+    <svg class="h-[18px] w-[18px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 6h12v10H2zM14 10h4l3 3v3h-7"/><circle cx="7" cy="17.5" r="1.8"/><circle cx="17" cy="17.5" r="1.8"/></svg>
+    Envío gratis en pedidos superiores a 90 €
+  </div>
+
+  <!-- Navbar -->
+  <header>
+    <nav class="flex flex-wrap items-center gap-3 px-4 py-4 md:flex-nowrap md:gap-5 md:px-8" aria-label="Principal">
+
+      <!-- Menú hamburguesa (solo móvil) -->
+      <details class="relative md:hidden">
+        <summary class="flex h-11 w-11 cursor-pointer list-none items-center justify-center rounded-full hover:bg-neutral-100 [&::-webkit-details-marker]:hidden" aria-label="Menú">
+          <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </summary>
+        <ul class="absolute left-0 top-full z-10 mt-2 w-48 rounded-2xl border border-neutral-200 bg-white p-2 shadow-lg">
+          <li><a href="index.html" class="block rounded-lg px-3 py-2 text-sm hover:bg-neutral-100">Inicio</a></li>
+          <li><a href="catalogo.html" class="block rounded-lg px-3 py-2 text-sm hover:bg-neutral-100">Calzado</a></li>
+          <li><a href="catalogo.html" class="block rounded-lg px-3 py-2 text-sm hover:bg-neutral-100">Camisas</a></li>
+          <li><a href="catalogo.html" class="block rounded-lg px-3 py-2 text-sm hover:bg-neutral-100">Pantalones</a></li>
+          <li><a href="catalogo.html" class="block rounded-lg px-3 py-2 text-sm hover:bg-neutral-100">Accesorios</a></li>
+        </ul>
+      </details>
+
+      <!-- Logo -->
+      <a href="index.html" class="text-2xl font-extrabold uppercase tracking-[0.12em]">Maison Aube</a>
+
+      <!-- Enlaces (solo escritorio y tableta) -->
+      <ul class="mx-auto hidden gap-6 text-sm font-semibold uppercase md:flex">
+        <li><a href="index.html" class="border-b-2 border-transparent py-1 hover:border-neutral-900">Inicio</a></li>
+        <li><a href="catalogo.html" class="border-b-2 border-transparent py-1 hover:border-neutral-900">Calzado</a></li>
+        <li><a href="catalogo.html" class="border-b-2 border-transparent py-1 hover:border-neutral-900">Camisas</a></li>
+        <li><a href="catalogo.html" class="border-b-2 border-transparent py-1 hover:border-neutral-900">Pantalones</a></li>
+        <li><a href="catalogo.html" class="border-b-2 border-transparent py-1 hover:border-neutral-900">Accesorios</a></li>
+      </ul>
+
+      <!-- Buscador -->
+      <form role="search" class="order-last flex h-11 basis-full items-center gap-2 rounded-full bg-neutral-100 px-4 focus-within:outline-2 focus-within:outline-blue-600 md:order-none md:basis-auto md:w-56">
+        <svg class="h-5 w-5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+        <label for="buscar" class="sr-only">Buscar productos</label>
+        <input type="search" id="buscar" name="q" placeholder="Buscar productos" class="min-w-0 flex-1 bg-transparent outline-none">
+      </form>
+
+      <!-- Cuenta y carrito -->
+      <div class="ml-auto flex items-center gap-1 md:ml-0">
+        <details class="relative">
+          <summary class="flex h-11 cursor-pointer list-none items-center gap-2 rounded-full px-3 hover:bg-neutral-100 [&::-webkit-details-marker]:hidden" aria-label="Mi cuenta">
+            <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg>
+            <span class="hidden text-sm font-semibold md:inline">Mi cuenta</span>
+          </summary>
+          <ul class="absolute right-0 top-full z-10 mt-2 w-48 rounded-2xl border border-neutral-200 bg-white p-2 shadow-lg">
+            <li><a href="#" class="block rounded-lg px-3 py-2 text-sm hover:bg-neutral-100">Iniciar sesión</a></li>
+            <li><a href="#" class="block rounded-lg px-3 py-2 text-sm hover:bg-neutral-100">Mis pedidos</a></li>
+            <li><a href="#" class="block rounded-lg px-3 py-2 text-sm hover:bg-neutral-100">Favoritos</a></li>
+          </ul>
+        </details>
+
+        <a href="carrito.html" class="relative flex h-11 w-11 items-center justify-center rounded-full hover:bg-neutral-100" aria-label="Carrito, 3 productos">
+          <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1 12H6L5 8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>
+          <span class="absolute right-0.5 top-0.5 grid h-[18px] min-w-[18px] place-items-center rounded-full bg-neutral-900 px-1 text-[11px] font-bold text-white">3</span>
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="px-4 py-8 md:px-8 md:py-10">
+    <h1 class="mb-6 text-3xl font-bold">Carrito</h1>
+
+    <div class="grid items-start gap-8 lg:grid-cols-[1fr_360px]">
+
+      <!-- Productos del carrito -->
+      <section class="flex flex-col gap-3" aria-label="Productos en el carrito">
+
+        <article class="grid grid-cols-[72px_1fr] items-center gap-4 rounded-2xl p-3 ring-1 ring-neutral-200 sm:grid-cols-[96px_1fr_auto]">
+          <div class="grid aspect-square place-items-center rounded-xl bg-neutral-200 text-[10px] font-semibold uppercase text-neutral-500" role="img" aria-label="Imagen de ejemplo: Camisa de lino Marine">Camisas</div>
+          <div>
+            <h2 class="font-semibold">Camisa de lino Marine</h2>
+            <p class="text-sm text-neutral-500">Talla M · Cantidad 1</p>
+          </div>
+          <p class="col-start-2 font-bold sm:col-start-auto sm:pr-2">89,00 €</p>
+        </article>
+
+        <article class="grid grid-cols-[72px_1fr] items-center gap-4 rounded-2xl p-3 ring-1 ring-neutral-200 sm:grid-cols-[96px_1fr_auto]">
+          <div class="grid aspect-square place-items-center rounded-xl bg-neutral-200 text-[10px] font-semibold uppercase text-neutral-500" role="img" aria-label="Imagen de ejemplo: Pantalón Chino Sable">Pantalones</div>
+          <div>
+            <h2 class="font-semibold">Pantalón Chino Sable</h2>
+            <p class="text-sm text-neutral-500">Talla 40 · Cantidad 1</p>
+          </div>
+          <p class="col-start-2 font-bold sm:col-start-auto sm:pr-2">79,00 €</p>
+        </article>
+
+        <article class="grid grid-cols-[72px_1fr] items-center gap-4 rounded-2xl p-3 ring-1 ring-neutral-200 sm:grid-cols-[96px_1fr_auto]">
+          <div class="grid aspect-square place-items-center rounded-xl bg-neutral-200 text-[10px] font-semibold uppercase text-neutral-500" role="img" aria-label="Imagen de ejemplo: Zapatillas Cuero Blanc">Calzado</div>
+          <div>
+            <h2 class="font-semibold">Zapatillas Cuero Blanc</h2>
+            <p class="text-sm text-neutral-500">Talla 42 · Cantidad 1</p>
+          </div>
+          <p class="col-start-2 font-bold sm:col-start-auto sm:pr-2">134,00 €</p>
+        </article>
+
+        <a href="catalogo.html" class="mt-2 self-start text-sm font-semibold hover:underline">← Seguir comprando</a>
+      </section>
+
+      <!-- Resumen -->
+      <aside class="flex flex-col gap-4 rounded-2xl bg-neutral-100 p-6" aria-labelledby="resumen-titulo">
+        <h2 id="resumen-titulo" class="text-lg font-bold">Resumen</h2>
+        <dl class="grid grid-cols-[1fr_auto] gap-x-4 gap-y-2">
+          <dt class="text-neutral-500">Subtotal</dt>
+          <dd class="text-right">302,00 €</dd>
+          <dt class="text-neutral-500">IVA 20 %</dt>
+          <dd class="text-right">60,40 €</dd>
+        </dl>
+        <dl class="grid grid-cols-[1fr_auto] gap-x-4 border-t border-neutral-200 pt-4 text-lg font-extrabold">
+          <dt>Total</dt>
+          <dd class="text-right">362,40 €</dd>
+        </dl>
+        <a href="checkout.html" class="mt-2 flex h-13 items-center justify-center rounded-xl bg-neutral-900 font-bold text-white hover:bg-neutral-700">Comprar</a>
+      </aside>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-neutral-100">
+    <div class="grid gap-8 px-4 py-10 text-sm md:grid-cols-4 md:px-8">
+      <div>
+        <a href="index.html" class="text-xl font-extrabold uppercase tracking-[0.12em]">Maison Aube</a>
+        <p class="mt-3 max-w-xs text-neutral-500">Ropa y calzado de diseño francés, hecha para durar.</p>
+      </div>
+      <nav aria-label="Categorías">
+        <h2 class="mb-3 font-bold">Categorías</h2>
+        <ul class="flex flex-col gap-2 text-neutral-500">
+          <li><a href="catalogo.html" class="hover:text-neutral-900 hover:underline">Calzado</a></li>
+          <li><a href="catalogo.html" class="hover:text-neutral-900 hover:underline">Camisas</a></li>
+          <li><a href="catalogo.html" class="hover:text-neutral-900 hover:underline">Pantalones</a></li>
+          <li><a href="catalogo.html" class="hover:text-neutral-900 hover:underline">Accesorios</a></li>
+        </ul>
+      </nav>
+      <nav aria-label="Legal">
+        <h2 class="mb-3 font-bold">Legal</h2>
+        <ul class="flex flex-col gap-2 text-neutral-500">
+          <li><a href="#" class="hover:text-neutral-900 hover:underline">Términos y condiciones</a></li>
+          <li><a href="#" class="hover:text-neutral-900 hover:underline">Política de privacidad</a></li>
+          <li><a href="#" class="hover:text-neutral-900 hover:underline">Sobre la marca</a></li>
+        </ul>
+      </nav>
+      <div>
+        <h2 class="mb-3 font-bold">Contacto</h2>
+        <ul class="flex flex-col gap-2 text-neutral-500">
+          <li>hola@maisonaube.example</li>
+          <li>+33 1 00 00 00 00</li>
+          <li>12 rue des Archives, París</li>
+        </ul>
+      </div>
+    </div>
+    <p class="px-4 pb-6 text-xs text-neutral-500 md:px-8">© 2026 Maison Aube. Prototipo con fines de demostración.</p>
+  </footer>
+
+</body>
+</html>
