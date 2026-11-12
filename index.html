@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maison Aube | Ropa y calzado de diseño francés</title>
+  <meta name="description" content="Maison Aube: camisas, pantalones, calzado y accesorios de diseño francés, hechos para durar.">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-white text-neutral-900">
+
+  <!-- Barra de anuncio -->
+  <div class="flex items-center justify-center gap-2 bg-neutral-100 px-4 py-2 text-sm font-medium">
+    <svg class="h-[18px] w-[18px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 6h12v10H2zM14 10h4l3 3v3h-7"/><circle cx="7" cy="17.5" r="1.8"/><circle cx="17" cy="17.5" r="1.8"/></svg>
+    Envío gratis en pedidos superiores a 90 €
+  </div>
+
+  <!-- Navbar -->
+  <header>
+    <nav class="flex flex-wrap items-center gap-3 px-4 py-4 md:flex-nowrap md:gap-5 md:px-8" aria-label="Principal">
+
+      <!-- Menú hamburguesa (solo móvil) -->
+      <details class="relative md:hidden">
+        <summary class="flex h-11 w-11 cursor-pointer list-none items-center justify-center rounded-full hover:bg-neutral-100 [&::-webkit-details-marker]:hidden" aria-label="Menú">
+          <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </summary>
+        <ul class="absolute left-0 top-full z-10 mt-2 w-48 rounded-2xl border border-neutral-200 bg-white p-2 shadow-lg">
+          <li><a href="index.html" class="block rounded-lg px-3 py-2 text-sm hover:bg-neutral-100">Inicio</a></li>
+          <li><a href="catalogo.html" class="block rounded-lg px-3 py-2 text-sm hover:bg-neutral-100">Calzado</a></li>
+          <li><a href="catalogo.html" class="block rounded-lg px-3 py-2 text-sm hover:bg-neutral-100">Camisas</a></li>
+          <li><a href="catalogo.html" class="block rounded-lg px-3 py-2 text-sm hover:bg-neutral-100">Pantalones</a></li>
+          <li><a href="catalogo.html" class="block rounded-lg px-3 py-2 text-sm hover:bg-neutral-100">Accesorios</a></li>
+        </ul>
+      </details>
+
+      <!-- Logo -->
+      <a href="index.html" class="text-2xl font-extrabold uppercase tracking-[0.12em]">Maison Aube</a>
+
+      <!-- Enlaces (solo escritorio y tableta) -->
+      <ul class="mx-auto hidden gap-6 text-sm font-semibold uppercase md:flex">
+        <li><a href="index.html" class="border-b-2 border-transparent py-1 hover:border-neutral-900">Inicio</a></li>
+        <li><a href="catalogo.html" class="border-b-2 border-transparent py-1 hover:border-neutral-900">Calzado</a></li>
+        <li><a href="catalogo.html" class="border-b-2 border-transparent py-1 hover:border-neutral-900">Camisas</a></li>
+        <li><a href="catalogo.html" class="border-b-2 border-transparent py-1 hover:border-neutral-900">Pantalones</a></li>
+        <li><a href="catalogo.html" class="border-b-2 border-transparent py-1 hover:border-neutral-900">Accesorios</a></li>
+      </ul>
+
+      <!-- Buscador -->
+      <form role="search" class="order-last flex h-11 basis-full items-center gap-2 rounded-full bg-neutral-100 px-4 focus-within:outline-2 focus-within:outline-blue-600 md:order-none md:basis-auto md:w-56">
+        <svg class="h-5 w-5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+        <label for="buscar" class="sr-only">Buscar productos</label>
+        <input type="search" id="buscar" name="q" placeholder="Buscar productos" class="min-w-0 flex-1 bg-transparent outline-none">
+      </form>
+
+      <!-- Cuenta y carrito -->
+      <div class="ml-auto flex items-center gap-1 md:ml-0">
+        <details class="relative">
+          <summary class="flex h-11 cursor-pointer list-none items-center gap-2 rounded-full px-3 hover:bg-neutral-100 [&::-webkit-details-marker]:hidden" aria-label="Mi cuenta">
+            <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg>
+            <span class="hidden text-sm font-semibold md:inline">Mi cuenta</span>
+          </summary>
+          <ul class="absolute right-0 top-full z-10 mt-2 w-48 rounded-2xl border border-neutral-200 bg-white p-2 shadow-lg">
+            <li><a href="#" class="block rounded-lg px-3 py-2 text-sm hover:bg-neutral-100">Iniciar sesión</a></li>
+            <li><a href="#" class="block rounded-lg px-3 py-2 text-sm hover:bg-neutral-100">Mis pedidos</a></li>
+            <li><a href="#" class="block rounded-lg px-3 py-2 text-sm hover:bg-neutral-100">Favoritos</a></li>
+          </ul>
+        </details>
+
+        <a href="carrito.html" class="relative flex h-11 w-11 items-center justify-center rounded-full hover:bg-neutral-100" aria-label="Carrito, 3 productos">
+          <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1 12H6L5 8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>
+          <span class="absolute right-0.5 top-0.5 grid h-[18px] min-w-[18px] place-items-center rounded-full bg-neutral-900 px-1 text-[11px] font-bold text-white">3</span>
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="grid gap-4 px-4 pb-2 pt-2 md:grid-cols-2 md:px-8" aria-labelledby="hero-titulo">
+      <div class="flex flex-col items-start justify-center gap-4 rounded-3xl bg-neutral-100 p-8 md:p-12">
+        <p class="text-sm font-semibold text-neutral-500">Colección otoño</p>
+        <h1 id="hero-titulo" class="text-3xl font-extrabold tracking-tight md:text-5xl">Prendas simples, hechas con cuidado</h1>
+        <p class="max-w-md text-neutral-500">Lino, algodón y cuero trabajados en pequeñas series. Descubre las novedades de la temporada.</p>
+        <a href="catalogo.html" class="inline-flex items-center gap-2 rounded-xl bg-neutral-900 px-6 py-3 font-bold text-white hover:bg-neutral-700">
+          Ver catálogo
+          <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+      <!-- Aquí irá la foto del hero -->
+      <div class="order-first grid min-h-56 place-items-center rounded-3xl bg-neutral-800 text-xs font-semibold uppercase tracking-wide text-neutral-400 md:order-none md:min-h-96" role="img" aria-label="Imagen de ejemplo: colección otoño">Colección otoño</div>
+    </section>
+
+    <!-- Nuevos lanzamientos -->
+    <section class="px-4 py-10 md:px-8" aria-labelledby="nuevos-titulo">
+      <div class="mb-5 flex items-baseline justify-between gap-4">
+        <h2 id="nuevos-titulo" class="text-2xl font-bold">Nuevos lanzamientos</h2>
+        <a href="catalogo.html" class="text-sm font-semibold hover:underline">Ver todo</a>
+      </div>
+      <div class="flex snap-x gap-4 overflow-x-auto pb-3">
+
+        <article class="w-56 shrink-0 snap-start overflow-hidden rounded-2xl bg-white ring-1 ring-neutral-200 md:w-60">
+          <a href="producto.html" class="block">
+            <div class="grid aspect-[4/5] place-items-center bg-neutral-200 text-xs font-semibold uppercase tracking-wide text-neutral-500" role="img" aria-label="Imagen de ejemplo: Camisa de lino Marine">Camisas</div>
+          </a>
+          <div class="flex items-center justify-between gap-2 p-3">
+            <a href="producto.html" class="min-w-0"><h3 class="text-sm font-semibold leading-snug">Camisa de lino Marine</h3><p class="text-sm text-neutral-500">89,00 €</p></a>
+            <button type="button" class="grid h-9 w-9 shrink-0 place-items-center rounded-full hover:bg-neutral-100" aria-label="Guardar Camisa de lino Marine en favoritos">
+              <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20s-7-4.4-9-9.2C1.8 7.2 4 4 7.2 4c2 0 3.6 1 4.8 2.8C13.2 5 14.8 4 16.8 4 20 4 22.2 7.2 21 10.8 19 15.6 12 20 12 20z"/></svg>
+            </button>
+          </div>
+        </article>
+
+        <article class="w-56 shrink-0 snap-start overflow-hidden rounded-2xl bg-white ring-1 ring-neutral-200 md:w-60">
+          <a href="producto.html" class="block">
+            <div class="grid aspect-[4/5] place-items-center bg-neutral-200 text-xs font-semibold uppercase tracking-wide text-neutral-500" role="img" aria-label="Imagen de ejemplo: Camisa de lino Azur">Camisas</div>
+          </a>
+          <div class="flex items-center justify-between gap-2 p-3">
+            <a href="producto.html" class="min-w-0"><h3 class="text-sm font-semibold leading-snug">Camisa de lino Azur</h3><p class="text-sm text-neutral-500">74,00 €</p></a>
+            <button type="button" class="grid h-9 w-9 shrink-0 place-items-center rounded-full hover:bg-neutral-100" aria-label="Guardar Camisa de lino Azur en favoritos">
+              <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20s-7-4.4-9-9.2C1.8 7.2 4 4 7.2 4c2 0 3.6 1 4.8 2.8C13.2 5 14.8 4 16.8 4 20 4 22.2 7.2 21 10.8 19 15.6 12 20 12 20z"/></svg>
+            </button>
+          </div>
+        </article>
+
+        <article class="w-56 shrink-0 snap-start overflow-hidden rounded-2xl bg-white ring-1 ring-neutral-200 md:w-60">
+          <a href="producto.html" class="block">
+            <div class="grid aspect-[4/5] place-items-center bg-neutral-200 text-xs font-semibold uppercase tracking-wide text-neutral-500" role="img" aria-label="Imagen de ejemplo: Pantalón Chino Sable">Pantalones</div>
+          </a>
+          <div class="flex items-center justify-between gap-2 p-3">
+            <a href="producto.html" class="min-w-0"><h3 class="text-sm font-semibold leading-snug">Pantalón Chino Sable</h3><p class="text-sm text-neutral-500">79,00 €</p></a>
+            <button type="button" class="grid h-9 w-9 shrink-0 place-items-center rounded-full hover:bg-neutral-100" aria-label="Guardar Pantalón Chino Sable en favoritos">
+              <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20s-7-4.4-9-9.2C1.8 7.2 4 4 7.2 4c2 0 3.6 1 4.8 2.8C13.2 5 14.8 4 16.8 4 20 4 22.2 7.2 21 10.8 19 15.6 12 20 12 20z"/></svg>
+            </button>
+          </div>
+        </article>
+
+        <article class="w-56 shrink-0 snap-start overflow-hidden rounded-2xl bg-white ring-1 ring-neutral-200 md:w-60">
+          <a href="producto.html" class="block">
+            <div class="grid aspect-[4/5] place-items-center bg-neutral-200 text-xs font-semibold uppercase tracking-wide text-neutral-500" role="img" aria-label="Imagen de ejemplo: Mocasines Cognac">Calzado</div>
+          </a>
+          <div class="flex items-center justify-between gap-2 p-3">
+            <a href="producto.html" class="min-w-0"><h3 class="text-sm font-semibold leading-snug">Mocasines Cognac</h3><p class="text-sm text-neutral-500">149,00 €</p></a>
+            <button type="button" class="grid h-9 w-9 shrink-0 place-items-center rounded-full hover:bg-neutral-100" aria-label="Guardar Mocasines Cognac en favoritos">
+              <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20s-7-4.4-9-9.2C1.8 7.2 4 4 7.2 4c2 0 3.6 1 4.8 2.8C13.2 5 14.8 4 16.8 4 20 4 22.2 7.2 21 10.8 19 15.6 12 20 12 20z"/></svg>
+            </button>
+          </div>
+        </article>
+
+        <article class="w-56 shrink-0 snap-start overflow-hidden rounded-2xl bg-white ring-1 ring-neutral-200 md:w-60">
+          <a href="producto.html" class="block">
+            <div class="grid aspect-[4/5] place-items-center bg-neutral-200 text-xs font-semibold uppercase tracking-wide text-neutral-500" role="img" aria-label="Imagen de ejemplo: Bufanda Lana Crema">Accesorios</div>
+          </a>
+          <div class="flex items-center justify-between gap-2 p-3">
+            <a href="producto.html" class="min-w-0"><h3 class="text-sm font-semibold leading-snug">Bufanda Lana Crema</h3><p class="text-sm text-neutral-500">52,00 €</p></a>
+            <button type="button" class="grid h-9 w-9 shrink-0 place-items-center rounded-full hover:bg-neutral-100" aria-label="Guardar Bufanda Lana Crema en favoritos">
+              <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20s-7-4.4-9-9.2C1.8 7.2 4 4 7.2 4c2 0 3.6 1 4.8 2.8C13.2 5 14.8 4 16.8 4 20 4 22.2 7.2 21 10.8 19 15.6 12 20 12 20z"/></svg>
+            </button>
+          </div>
+        </article>
+
+        <article class="w-56 shrink-0 snap-start overflow-hidden rounded-2xl bg-white ring-1 ring-neutral-200 md:w-60">
+          <a href="producto.html" class="block">
+            <div class="grid aspect-[4/5] place-items-center bg-neutral-200 text-xs font-semibold uppercase tracking-wide text-neutral-500" role="img" aria-label="Imagen de ejemplo: Botines Camel">Calzado</div>
+          </a>
+          <div class="flex items-center justify-between gap-2 p-3">
+            <a href="producto.html" class="min-w-0"><h3 class="text-sm font-semibold leading-snug">Botines Camel</h3><p class="text-sm text-neutral-500">168,00 €</p></a>
+            <button type="button" class="grid h-9 w-9 shrink-0 place-items-center rounded-full hover:bg-neutral-100" aria-label="Guardar Botines Camel en favoritos">
+              <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20s-7-4.4-9-9.2C1.8 7.2 4 4 7.2 4c2 0 3.6 1 4.8 2.8C13.2 5 14.8 4 16.8 4 20 4 22.2 7.2 21 10.8 19 15.6 12 20 12 20z"/></svg>
+            </button>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Más vendidos -->
+    <section class="px-4 pb-10 md:px-8" aria-labelledby="vendidos-titulo">
+      <div class="mb-5 flex items-baseline justify-between gap-4">
+        <h2 id="vendidos-titulo" class="text-2xl font-bold">Más vendidos</h2>
+        <a href="catalogo.html" class="text-sm font-semibold hover:underline">Ver todo</a>
+      </div>
+      <div class="flex snap-x gap-4 overflow-x-auto pb-3">
+
+        <article class="w-56 shrink-0 snap-start overflow-hidden rounded-2xl bg-white ring-1 ring-neutral-200 md:w-60">
+          <a href="producto.html" class="block">
+            <div class="grid aspect-[4/5] place-items-center bg-neutral-200 text-xs font-semibold uppercase tracking-wide text-neutral-500" role="img" aria-label="Imagen de ejemplo: Zapatillas Cuero Blanc">Calzado</div>
+          </a>
+          <div class="flex items-center justify-between gap-2 p-3">
+            <a href="producto.html" class="min-w-0"><h3 class="text-sm font-semibold leading-snug">Zapatillas Cuero Blanc</h3><p class="text-sm text-neutral-500">134,00 €</p></a>
+            <button type="button" class="grid h-9 w-9 shrink-0 place-items-center rounded-full hover:bg-neutral-100" aria-label="Guardar Zapatillas Cuero Blanc en favoritos">
+              <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20s-7-4.4-9-9.2C1.8 7.2 4 4 7.2 4c2 0 3.6 1 4.8 2.8C13.2 5 14.8 4 16.8 4 20 4 22.2 7.2 21 10.8 19 15.6 12 20 12 20z"/></svg>
+            </button>
+          </div>
+        </article>
+
+        <article class="w-56 shrink-0 snap-start overflow-hidden rounded-2xl bg-white ring-1 ring-neutral-200 md:w-60">
+          <a href="producto.html" class="block">
+            <div class="grid aspect-[4/5] place-items-center bg-neutral-200 text-xs font-semibold uppercase tracking-wide text-neutral-500" role="img" aria-label="Imagen de ejemplo: Cartera Piel Compacta">Accesorios</div>
+          </a>
+          <div class="flex items-center justify-between gap-2 p-3">
+            <a href="producto.html" class="min-w-0"><h3 class="text-sm font-semibold leading-snug">Cartera Piel Compacta</h3><p class="text-sm text-neutral-500">58,00 €</p></a>
+            <button type="button" class="grid h-9 w-9 shrink-0 place-items-center rounded-full hover:bg-neutral-100" aria-label="Guardar Cartera Piel Compacta en favoritos">
+              <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20s-7-4.4-9-9.2C1.8 7.2 4 4 7.2 4c2 0 3.6 1 4.8 2.8C13.2 5 14.8 4 16.8 4 20 4 22.2 7.2 21 10.8 19 15.6 12 20 12 20z"/></svg>
+            </button>
+          </div>
+        </article>
+
+        <article class="w-56 shrink-0 snap-start overflow-hidden rounded-2xl bg-white ring-1 ring-neutral-200 md:w-60">
+          <a href="producto.html" class="block">
+            <div class="grid aspect-[4/5] place-items-center bg-neutral-200 text-xs font-semibold uppercase tracking-wide text-neutral-500" role="img" aria-label="Imagen de ejemplo: Pantalón Sastre Noir">Pantalones</div>
+          </a>
+          <div class="flex items-center justify-between gap-2 p-3">
+            <a href="producto.html" class="min-w-0"><h3 class="text-sm font-semibold leading-snug">Pantalón Sastre Noir</h3><p class="text-sm text-neutral-500">96,00 €</p></a>
+            <button type="button" class="grid h-9 w-9 shrink-0 place-items-center rounded-full hover:bg-neutral-100" aria-label="Guardar Pantalón Sastre Noir en favoritos">
+              <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20s-7-4.4-9-9.2C1.8 7.2 4 4 7.2 4c2 0 3.6 1 4.8 2.8C13.2 5 14.8 4 16.8 4 20 4 22.2 7.2 21 10.8 19 15.6 12 20 12 20z"/></svg>
+            </button>
+          </div>
+        </article>
+
+        <article class="w-56 shrink-0 snap-start overflow-hidden rounded-2xl bg-white ring-1 ring-neutral-200 md:w-60">
+          <a href="producto.html" class="block">
+            <div class="grid aspect-[4/5] place-items-center bg-neutral-200 text-xs font-semibold uppercase tracking-wide text-neutral-500" role="img" aria-label="Imagen de ejemplo: Camisa de lino Blanche">Camisas</div>
+          </a>
+          <div class="flex items-center justify-between gap-2 p-3">
+            <a href="producto.html" class="min-w-0"><h3 class="text-sm font-semibold leading-snug">Camisa de lino Blanche</h3><p class="text-sm text-neutral-500">68,00 €</p></a>
+            <button type="button" class="grid h-9 w-9 shrink-0 place-items-center rounded-full hover:bg-neutral-100" aria-label="Guardar Camisa de lino Blanche en favoritos">
+              <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20s-7-4.4-9-9.2C1.8 7.2 4 4 7.2 4c2 0 3.6 1 4.8 2.8C13.2 5 14.8 4 16.8 4 20 4 22.2 7.2 21 10.8 19 15.6 12 20 12 20z"/></svg>
+            </button>
+          </div>
+        </article>
+
+        <article class="w-56 shrink-0 snap-start overflow-hidden rounded-2xl bg-white ring-1 ring-neutral-200 md:w-60">
+          <a href="producto.html" class="block">
+            <div class="grid aspect-[4/5] place-items-center bg-neutral-200 text-xs font-semibold uppercase tracking-wide text-neutral-500" role="img" aria-label="Imagen de ejemplo: Cinturón Cuero Fin">Accesorios</div>
+          </a>
+          <div class="flex items-center justify-between gap-2 p-3">
+            <a href="producto.html" class="min-w-0"><h3 class="text-sm font-semibold leading-snug">Cinturón Cuero Fin</h3><p class="text-sm text-neutral-500">45,00 €</p></a>
+            <button type="button" class="grid h-9 w-9 shrink-0 place-items-center rounded-full hover:bg-neutral-100" aria-label="Guardar Cinturón Cuero Fin en favoritos">
+              <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20s-7-4.4-9-9.2C1.8 7.2 4 4 7.2 4c2 0 3.6 1 4.8 2.8C13.2 5 14.8 4 16.8 4 20 4 22.2 7.2 21 10.8 19 15.6 12 20 12 20z"/></svg>
+            </button>
+          </div>
+        </article>
+
+        <article class="w-56 shrink-0 snap-start overflow-hidden rounded-2xl bg-white ring-1 ring-neutral-200 md:w-60">
+          <a href="producto.html" class="block">
+            <div class="grid aspect-[4/5] place-items-center bg-neutral-200 text-xs font-semibold uppercase tracking-wide text-neutral-500" role="img" aria-label="Imagen de ejemplo: Vaquero Noir">Pantalones</div>
+          </a>
+          <div class="flex items-center justify-between gap-2 p-3">
+            <a href="producto.html" class="min-w-0"><h3 class="text-sm font-semibold leading-snug">Vaquero Noir</h3><p class="text-sm text-neutral-500">92,00 €</p></a>
+            <button type="button" class="grid h-9 w-9 shrink-0 place-items-center rounded-full hover:bg-neutral-100" aria-label="Guardar Vaquero Noir en favoritos">
+              <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20s-7-4.4-9-9.2C1.8 7.2 4 4 7.2 4c2 0 3.6 1 4.8 2.8C13.2 5 14.8 4 16.8 4 20 4 22.2 7.2 21 10.8 19 15.6 12 20 12 20z"/></svg>
+            </button>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-neutral-100">
+    <div class="grid gap-8 px-4 py-10 text-sm md:grid-cols-4 md:px-8">
+      <div>
+        <a href="index.html" class="text-xl font-extrabold uppercase tracking-[0.12em]">Maison Aube</a>
+        <p class="mt-3 max-w-xs text-neutral-500">Ropa y calzado de diseño francés, hecha para durar.</p>
+      </div>
+      <nav aria-label="Categorías">
+        <h2 class="mb-3 font-bold">Categorías</h2>
+        <ul class="flex flex-col gap-2 text-neutral-500">
+          <li><a href="catalogo.html" class="hover:text-neutral-900 hover:underline">Calzado</a></li>
+          <li><a href="catalogo.html" class="hover:text-neutral-900 hover:underline">Camisas</a></li>
+          <li><a href="catalogo.html" class="hover:text-neutral-900 hover:underline">Pantalones</a></li>
+          <li><a href="catalogo.html" class="hover:text-neutral-900 hover:underline">Accesorios</a></li>
+        </ul>
+      </nav>
+      <nav aria-label="Legal">
+        <h2 class="mb-3 font-bold">Legal</h2>
+        <ul class="flex flex-col gap-2 text-neutral-500">
+          <li><a href="#" class="hover:text-neutral-900 hover:underline">Términos y condiciones</a></li>
+          <li><a href="#" class="hover:text-neutral-900 hover:underline">Política de privacidad</a></li>
+          <li><a href="#" class="hover:text-neutral-900 hover:underline">Sobre la marca</a></li>
+        </ul>
+      </nav>
+      <div>
+        <h2 class="mb-3 font-bold">Contacto</h2>
+        <ul class="flex flex-col gap-2 text-neutral-500">
+          <li>hola@maisonaube.example</li>
+          <li>+33 1 00 00 00 00</li>
+          <li>12 rue des Archives, París</li>
+        </ul>
+      </div>
+    </div>
+    <p class="px-4 pb-6 text-xs text-neutral-500 md:px-8">© 2026 Maison Aube. Prototipo con fines de demostración.</p>
+  </footer>
+
+</body>
+</html>
